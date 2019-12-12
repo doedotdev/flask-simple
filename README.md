@@ -43,6 +43,11 @@ mypy src/
 flaske8 src/
 ```
 
+### Run SmokeTest
+```
+python smoke.py
+```
+
 ### Quality
 - Pylint - 10.0/10.0
 - Black - 0 Files Changes
@@ -50,3 +55,5 @@ flaske8 src/
 - Flask8 - Zero Issues
 - Pytest - Every Logical Files and Method
 - Coverage - 100% Code Coverage
+- TODO: smoke tests on simple virtulenv run
+- TODO: smoke tests on docker run
