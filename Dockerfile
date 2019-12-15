@@ -2,7 +2,7 @@ FROM python:3.7
 
 ADD ./src /code/src
 ADD app.py /code
-ADD requirements.txt /code
+ADD requirements/requirements.txt /code
 
 ENV PYTHONPATH=$PYTHONPATH:./src/
 WORKDIR /code
