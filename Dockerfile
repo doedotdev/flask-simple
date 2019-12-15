@@ -1,5 +1,9 @@
 FROM python:3.7
-add . /code
+
+ADD ./src /code/src
+ADD app.py /code
+ADD requirements.txt /code
+
 ENV PYTHONPATH=$PYTHONPATH:./src/
 WORKDIR /code
 RUN pip install --upgrade pip

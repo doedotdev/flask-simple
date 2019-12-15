@@ -40,7 +40,7 @@ mypy src/
 
 ### Run Flake8
 ```
-flaske8 src/
+flake8 src/
 ```
 
 ### Run SmokeTest

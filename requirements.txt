@@ -1,2 +1,6 @@
 flask
 pytest
+mock
+black
+mypy
+flake8
