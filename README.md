@@ -3,7 +3,7 @@ Flask Simple Example | Structure + Simplicity
 
 ### Run Simple
 ```
-pip install -r requirements.txt
+pip install -r requirements/requirements.txt
 python app.py
 ```
 
