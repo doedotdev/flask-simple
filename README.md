@@ -22,6 +22,11 @@ python -m pytest test/
 coverage run --source=src/ -m pytest test/ && coverage report
 ```
 
+### Run SmokeTest
+```
+python smoke_test.py
+```
+
 ### Run Black
 ```
 black --check src/
@@ -43,11 +48,6 @@ mypy src/
 flake8 src/
 ```
 
-### Run SmokeTest
-```
-python smoke.py
-```
-
 ### Quality
 - Pylint - 10.0/10.0
 - Black - 0 Files Changes
@@ -55,5 +55,5 @@ python smoke.py
 - Flask8 - Zero Issues
 - Pytest - Every Logical Files and Method
 - Coverage - 100% Code Coverage
-- TODO: smoke tests on simple virtulenv run
-- TODO: smoke tests on docker run
+- SmokeTest - Every endpoint
+

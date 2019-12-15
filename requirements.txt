@@ -4,3 +4,4 @@ mock
 black
 mypy
 flake8
+requests
