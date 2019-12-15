@@ -23,4 +23,4 @@ jobs:
         pip install -r requirements/requirements_test.txt
     - name: Test with pytest
       run: |
-        python -m pytest test/
+        python -m pytest test/ --ignore test/smoke_test.py
