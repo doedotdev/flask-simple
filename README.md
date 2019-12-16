@@ -55,12 +55,9 @@ pip install -r requirements/requirements_test.txt
 flake8 src/
 ```
 
-### Quality
-- Pylint - 10.0/10.0
-- Black - 0 Files Changes
-- MyPy - Zero Issues
-- Flask8 - Zero Issues
-- Pytest - Every Logical Files and Method
-- Coverage - 100% Code Coverage
-- SmokeTest - Every endpoint
-
+### Github Actions
+- black: All files passing
+- mypy: all files passing
+- pytest: all tests passing in python 3.6, 3.7, 3.8
+- covergae: 100% code coverage
+- flake8: all files passing with line-length extended
