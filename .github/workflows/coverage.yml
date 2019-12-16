@@ -13,7 +13,10 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.8
-    - name: Coverage
+    - name: Install Dependencies
       run: |
         pip install coverage
+        pip install pytest
+    - name: Coverage
+      run: |
         coverage run --source=src/ -m pytest test/ && coverage report --fail-under=100
