@@ -13,7 +13,9 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.8
-    - name: Black
+    - name: Install Dependencies
       run: |
         pip install black
+    - name: Black
+      run: |
         black --check src/
