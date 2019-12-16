@@ -1,0 +1,19 @@
+  
+name: Coverage
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Coverage
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Coverage
+      run: |
+        pip install coverage
+        coverage run --source=src/ -m pytest test/ && coverage report --fail-under=100
