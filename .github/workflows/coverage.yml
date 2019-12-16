@@ -18,4 +18,4 @@ jobs:
         pip install -r requirements/requirements_test.txt
     - name: Coverage
       run: |
-        coverage run --source=src/ -m pytest test/ && coverage report --fail-under=100
+        coverage run --source=src/ -m pytest test/ --ignore test/smoke_test.py && coverage report --fail-under=100
