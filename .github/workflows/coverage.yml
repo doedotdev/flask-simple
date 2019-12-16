@@ -15,8 +15,7 @@ jobs:
         python-version: 3.8
     - name: Install Dependencies
       run: |
-        pip install coverage
-        pip install pytest
+        pip install -r requirements/requirements_test.txt
     - name: Coverage
       run: |
         coverage run --source=src/ -m pytest test/ && coverage report --fail-under=100
