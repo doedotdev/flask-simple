@@ -14,7 +14,9 @@ def test_math_mul_div(test_app):
     value_one = 3
     value_two = 4
 
-    math_response = test_app.get("/mul-div?value_one={}&value_two={}".format(value_one, value_two))
+    math_response = test_app.get(
+        "/mul-div?value_one={}&value_two={}".format(value_one, value_two)
+    )
 
     assert math_response.status == "200 OK"
     assert math_response.status_code == 200
@@ -29,7 +31,9 @@ def test_math_add_sub(test_app):
     value_one = 3
     value_two = 4
 
-    math_response = test_app.get("/add-sub?value_one={}&value_two={}".format(value_one, value_two))
+    math_response = test_app.get(
+        "/add-sub?value_one={}&value_two={}".format(value_one, value_two)
+    )
 
     assert math_response.status == "200 OK"
     assert math_response.status_code == 200

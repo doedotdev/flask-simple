@@ -12,7 +12,7 @@ def test_math_mul_div():
         "value_one": value_one,
         "value_two": value_two,
         "multiplication": value_one * value_two,
-        "division": value_one / value_two
+        "division": value_one / value_two,
     }
 
 
@@ -27,5 +27,5 @@ def test_math_add_sub():
         "value_one": value_one,
         "value_two": value_two,
         "addition": value_one + value_two,
-        "subtraction": value_one - value_two
+        "subtraction": value_one - value_two,
     }
