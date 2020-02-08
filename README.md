@@ -59,5 +59,5 @@ flake8 src/
 - black: All files passing
 - mypy: all files passing
 - pytest: all tests passing in python 3.6, 3.7, 3.8
-- covergae: 100% code coverage
+- coverage: 100% code coverage
 - flake8: all files passing with line-length extended
